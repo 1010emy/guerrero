@@ -1,21 +1,31 @@
-Nombre del jugador  string "Orfeo"
-Vida del jugador int (x)
-Resistencia del jugador int (y)  
-Fuerza del jugador (int)
-Resistencia del jugador (int)
-Energia (float)
-Lugar en el mapa string "Bar de Hermes"
-Accion int (11)
+int vida, resistencia, fuerza, accion
+float energia = 100, reproducirSonido
+string nombre, ubicacion
+
+
+
+nombre (string) = "Orfeo"
+    Mostrar nombre
+ubicacion (string) = "Bar de Hermes"
+     Mostrar ubicacion
+vida (int)
+resistencia (int) 
+    Leer resistencia
+fuerza (int)    
+energia (float)
+accion (int)
+
+
 
 CrearCanción()
    ComponerLetra (int) = -1.5 energia
                        = +5 fuerza
 
 Cantar()
-   ReproducirSonido (int) 
+   reproducirSonido (float)
    Mostrar "King of silver... King of bricks... And everything shivering under the ground."
    Fuerza = +10
 
 TocarLira()
-   ReproducirSonido (int)
+   reproducirSonido 
    fuerza= +10
