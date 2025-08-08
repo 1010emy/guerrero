@@ -24,61 +24,52 @@ INICIO PROGRAMA
 
 FIN PROGRAMA
 
+//Menú principal
+MOSTRAR "Elige cuantas horas quieres practicar"
+MOSTRAR "1. UNA HORA"
+MOSTRAR "2. DOS HORAS"
+MOSTRAR "3. TRES HORAS"
+MOSTRAR "4. CUATRO HORAS"
+MOSTRAR "5. CINCO HORAS"
+LEER num 
+REPETIR
+
+MOSTAR "Orfeo se sienta en una esquina y empieza a practicar..."
+
 /-- MÉTODOS --/
 
 METODO CrearCanción()
-   DEFINIR ComponerLetra COMO ENTERO = -1.5 energia ⚠️ ¿entero o decimal? ¿cuál operación va a hacer con energía?
-                       = +5 fuerza ⚠️ ¿a cual variable vas a asignar esto?
+   DEFINIR ComponerLetra COMO FLOAT = -1.5 energia 
+                                    = +5 fuerza 
                        
 METODO AtaqueOrfeo()
     DEFINIR Cantar COMO CADENA DE TEXTO
     MOSTRAR "King of silver... King of bricks... And everything shivering under the ground."
     DEFINIR reproducirSonido COMO FLOAT
-    energia = - 1.5 ⚠️ Revisa los apuntes 
-   Fuerza = +10
+    - 1.5 = energia
+    = +10 Fuerza 
 
 METODO TocarLira()
-   reproducirSonido ⚠️ ¿Qué vas a hacer con la variable?
-   fuerza= +10
+   reproducirSonido = archivo.mp3
+    +10 = fuerza
 
 METODO HorasEntrenadas()
-   DEFINIR - COMO ENTERO = 6 horas ⚠️ FALTA EL NOMBRE DE LA VARIABLE
-   - 6.5 energia ⚠️ ¿A qué le vas a restar?
-   + 30 fuerza ⚠️
+   DEFINIR horas COMO ENTERO = 6 horas 
+   - 6.5 = energia
+   + 30 = fuerza 
+//Mostrar el progreso relizado en texto, tomando en cuenta las horas entrenadas
 
-    MOSTRAR "Hades entra al bar y se lleva a Euridice"
+//Menu alterno al finalizar la practica
+MOSTRAR "La canción esta casi terminada"
+MOSTRAR "¿Seguir practicando?
+MOSTRAR "A. No"
+MOSTRAR "B. Si"
+LEER letra 
+    SEGUN num HACER
+  A:  MOSTRAR "Orfeo deja de practicar y va a recoger madera junto con Euridice"
+      MOSTRAR "Ambos van a descansar"
+      //Orfeo recarga energia
+  B: //Regresar al menu principal
+HASTA QUE letra = B 
 
-    DEFINIR vidaHades COMO ENTERO = 500
-    DEFINE resistencia COMO ENTERO = 100 ⚠️ Ya existe esa variable
-    LEER resistencia ⚠️ esto sobre escribe el valor que acabas de asignar justo arriba
-    DEFINE fuerza COMO ENTERO ⚠️ Ya existe esa variable
-    DEFINE energiaHades COMO FLOAT = 300
-    DEFINE accion COMO ENTERO ⚠️ Ya existe esa variable
-
-    MOSTRAR "Orfeo sigue a Hades al inframundo"
-    ubicación = "Inframundo"
-    MOSTRAR ubicacion
-
-METODO AtaqueHades()
-   - 10 vidaOrfeo 
-   - 2 energia
-   
-METODO AtaqueOrfeo()
-   - 5 vidaHades
-   - 1.5 energia
-
-    MOSTRAR "Hades recuerda la cancion de su juventud y conmovido, deja a ir a Euridice"
-    + 5.5 energia
-    + 50 de vidaOrfeo
     
-    MOSTRAR "Hades dejo ir a Euridice con la condición de que, al regresar caminando del inframundo, ella tiene que caminar detrás de él, y Orfeo en ningún momento debera de voltear a verla" 
-    
-    DEFINE caminataOrfeo COMO FLOAT
-    DEFINE dialogoEuridice COMO STRING
-
-LLAMAR diálogoEuridice()
-    
-
-//Si la energia de Orfeo llega a 0 antes de llegar a la entrada del inframundo, entonces volteara
-
-//Si la energía de Orfeo esta por encima de cero al llegar a la entrada del inframundo, entonces Eurídice podra salir junto con él 
